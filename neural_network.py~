@@ -59,8 +59,7 @@ class NeuralNetwork(object):
         for l in range(self.num_layers-1, -1, -1):
             layer = self.layers[l]
             if l == self.num_layers-1:
-                hypotheses = layer.get_x()
-                print(hypotheses)
+                hypotheses = layer.get_x() 
                 #hypotheses = array(([1 if x == max(hypotheses) else 0 for x in hypotheses]))
                 truth = array(([ 1 if i == data_class else 0 for i in range(10)]))
                 prev_deltas =  error_delta_method(hypotheses, truth)

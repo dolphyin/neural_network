@@ -10,7 +10,7 @@ def sigmoid_deriv(x):
     return val - val**2
 
 def mean_squared_error(hypotheses, truth):
-    return 0.5*sum((truth - hypotheses)**2)
+    return 0.5*sum((truth - hypothesis)**2)
 
 def get_mean_squared_delta(hypothesis, truth) :
     return (truth - hypothesis) * (hypothesis**2 - hypothesis)
