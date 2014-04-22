@@ -3,7 +3,7 @@ from scipy import *
 from math import *
 
 def sigmoid(x):
-    return 1.0/(1 + e**x) 
+    return 1.0/(1 + e**(-x)) 
 
 def sigmoid_deriv(x):
     val = sigmoid(x)
